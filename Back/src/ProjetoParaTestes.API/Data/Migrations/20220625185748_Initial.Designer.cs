@@ -10,7 +10,7 @@ using ProjetoParaTestes.API.Data;
 namespace ProjetoParaTestes.API.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20220625183812_Initial")]
+    [Migration("20220625185748_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
