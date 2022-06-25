@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using ProjetoParaTestes.API.Data;
 using ProjetoParaTestes.API.Models;
 
 namespace ProjetoParaTestes.API.Controllers;
@@ -12,22 +13,16 @@ public class TestesController : ControllerBase
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
     };
 
-    private readonly ILogger<TestesController> _logger;
+    private readonly DataContext _context;
 
-    public TestesController(ILogger<TestesController> logger)
+    public TestesController(DataContext context)
     {
-        _logger = logger;
+        _context = context;
     }
 
     [HttpGet(Name = "GetTestes")]
-    public IEnumerable<Testes> Get()
+    public IEnumerable<Evento> Get()
     {
-        return Enumerable.Range(1, 5).Select(index => new Testes
-        {
-            Date = DateTime.Now.AddDays(index),
-            TemperatureC = Random.Shared.Next(-20, 55),
-            Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-        })
-        .ToArray();
+        return _context.Eventos;
     }
 }
