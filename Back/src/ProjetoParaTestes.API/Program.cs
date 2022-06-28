@@ -1,5 +1,9 @@
 using Microsoft.EntityFrameworkCore;
-using ProjetoParaTestes.API.Data;
+using ProjetoParaTestes.Application;
+using ProjetoParaTestes.Application.Contratos;
+using ProjetoParaTestes.Persistence;
+using ProjetoParaTestes.Persistence.Contextos;
+using ProjetoParaTestes.Persistence.Contratos;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +16,14 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DataContext>(
                 context => context.UseSqlite(builder.Configuration.GetConnectionString("Default"))
 );
+builder.Services.AddControllers()
+                    .AddNewtonsoftJson(x => x.SerializerSettings.ReferenceLoopHandling =
+                        Newtonsoft.Json.ReferenceLoopHandling.Ignore
+                    );
 
+builder.Services.AddScoped<IEventoService, EventoService>();
+builder.Services.AddScoped<IGeralPersist, GeralPersist>();
+builder.Services.AddScoped<IEventoPersist, EventoPersist>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

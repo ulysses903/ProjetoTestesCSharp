@@ -1,4 +1,4 @@
-using ProjetoParaTestes.API.Models;
+using ProjetoParaTestes.Domain;
 using Xunit;
 
 namespace PorjetoParaTestes.Test;

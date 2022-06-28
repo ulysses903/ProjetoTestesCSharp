@@ -1,4 +1,4 @@
-namespace ProjetoParaTestes.API.Models;
+namespace ProjetoParaTestes.Domain;
 
 public class Testes
 {

@@ -27,7 +27,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Projetos\\ProejtoTestes\\Back\\src\\ProjetoParaTestes.Application\\ProjetoParaTestes.Application.csproj": {
+                "projectPath": "C:\\Projetos\\ProejtoTestes\\Back\\src\\ProjetoParaTestes.Application\\ProjetoParaTestes.Application.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -40,6 +44,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.6, )"
@@ -79,6 +87,189 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projetos\\ProejtoTestes\\Back\\src\\ProjetoParaTestes.Application\\ProjetoParaTestes.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projetos\\ProejtoTestes\\Back\\src\\ProjetoParaTestes.Application\\ProjetoParaTestes.Application.csproj",
+        "projectName": "ProjetoParaTestes.Application",
+        "projectPath": "C:\\Projetos\\ProejtoTestes\\Back\\src\\ProjetoParaTestes.Application\\ProjetoParaTestes.Application.csproj",
+        "packagesPath": "C:\\Users\\ulyss\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\ProejtoTestes\\Back\\src\\ProjetoParaTestes.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ulyss\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Projetos\\ProejtoTestes\\Back\\src\\ProjetoParaTestes.Domain\\ProjetoParaTestes.Domain.csproj": {
+                "projectPath": "C:\\Projetos\\ProejtoTestes\\Back\\src\\ProjetoParaTestes.Domain\\ProjetoParaTestes.Domain.csproj"
+              },
+              "C:\\Projetos\\ProejtoTestes\\Back\\src\\ProjetoParaTestes.Persistence\\ProjetoParaTestes.Persistence.csproj": {
+                "projectPath": "C:\\Projetos\\ProejtoTestes\\Back\\src\\ProjetoParaTestes.Persistence\\ProjetoParaTestes.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projetos\\ProejtoTestes\\Back\\src\\ProjetoParaTestes.Domain\\ProjetoParaTestes.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projetos\\ProejtoTestes\\Back\\src\\ProjetoParaTestes.Domain\\ProjetoParaTestes.Domain.csproj",
+        "projectName": "ProjetoParaTestes.Domain",
+        "projectPath": "C:\\Projetos\\ProejtoTestes\\Back\\src\\ProjetoParaTestes.Domain\\ProjetoParaTestes.Domain.csproj",
+        "packagesPath": "C:\\Users\\ulyss\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\ProejtoTestes\\Back\\src\\ProjetoParaTestes.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ulyss\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projetos\\ProejtoTestes\\Back\\src\\ProjetoParaTestes.Persistence\\ProjetoParaTestes.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projetos\\ProejtoTestes\\Back\\src\\ProjetoParaTestes.Persistence\\ProjetoParaTestes.Persistence.csproj",
+        "projectName": "ProjetoParaTestes.Persistence",
+        "projectPath": "C:\\Projetos\\ProejtoTestes\\Back\\src\\ProjetoParaTestes.Persistence\\ProjetoParaTestes.Persistence.csproj",
+        "packagesPath": "C:\\Users\\ulyss\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\ProejtoTestes\\Back\\src\\ProjetoParaTestes.Persistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ulyss\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Projetos\\ProejtoTestes\\Back\\src\\ProjetoParaTestes.Domain\\ProjetoParaTestes.Domain.csproj": {
+                "projectPath": "C:\\Projetos\\ProejtoTestes\\Back\\src\\ProjetoParaTestes.Domain\\ProjetoParaTestes.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

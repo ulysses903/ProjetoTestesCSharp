@@ -21,6 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="C:\Projetos\ProejtoTestes\Back\src\ProjetoParaTestes.API\ProjetoParaTestes.API.csproj"/>
+    <ProjectReference Include="C:\Projetos\ProejtoTestes\Back\src\ProjetoParaTestes.Domain\ProjetoParaTestes.Domain.csproj"/>
   </ItemGroup>
 </Project>
